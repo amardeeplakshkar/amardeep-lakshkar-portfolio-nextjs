@@ -2,5 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
 }
+module.exports = {
+  reactStrictMode: true, 
+  images: {
+    hostname: ['res.cloudinary.com'],
+  },
+}
 
 module.exports = nextConfig
