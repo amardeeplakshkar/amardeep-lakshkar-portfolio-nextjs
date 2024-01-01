@@ -550,7 +550,125 @@ hr {
   justify-content: center;
   align-items: center;
 }
+/* ======CONTACT======== */
 
+.contact-container {
+  display: grid;
+  place-items: center;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper1>* {
+  width: 100%;
+  display: grid;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.wrapper1>:nth-child(3) {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.wrapper1>:last-child {
+  place-items: center;
+  background-color: var(--clr-theme);
+  color: aliceblue;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-cta {
+  display: none;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
+.wrapper1>:last-child:hover>:first-child {
+  display: none;
+}
+
+.wrapper1>:last-child:hover .btn-cta {
+  display: inline-block;
+}
+
+.wrapper2 {
+  display: grid;
+  margin: 1rem;
+}
+
+.wrapper2>* {
+  padding: .5rem 0;
+}
+
+.wrapper2>:nth-child(3) {
+  border-bottom: 1px solid;
+}
+
+.wrapper2>:nth-child(5) {
+  border-bottom: 1px solid;
+}
+
+.wrapper2>:last-child {
+  font-size: .8rem;
+  color: hsl(0, 0%, 100%, 50%);
+}
+
+.contact-social-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-social-container>* {
+  padding: 1rem;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 50%;
+  color: var(--clr-white);
+  margin-bottom: .5rem;
+}
+
+.contact-social-container>*:hover {
+  padding: 1rem;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  color: var(--clr-theme);
+}
+
+@media (max-width: 625px) {
+  .wrapper1>* {
+    padding: .8rem;
+  }
+  .image-container:hover .my-name {
+    letter-spacing: .5rem;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-social-container{
+    padding-bottom: 1.5rem;
+  }
+  .my-name {
+    font-size: calc(2vh + 4.5vh);
+  }
+
+  .bg-blob {
+    padding: calc(3dvh + 10dvh);
+  }
+
+  .about-image>img {
+    height: 15rem;
+  }
+
+  #about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
 @media (max-width: 625px) {
   .image-container:hover .my-name {
     letter-spacing: .5rem;

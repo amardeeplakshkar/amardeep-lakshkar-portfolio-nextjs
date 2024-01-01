@@ -41,7 +41,7 @@ const Slider = () => {
                 <ul className="tag-list scroller__inner">
                     {tagListItems.map((item, index) => (
                         <li key={index}>
-                            {item.icon && <FontAwesomeIcon icon={item.icon} classNameName='fa'/>}
+                            {item.icon && <FontAwesomeIcon icon={item.icon} className='fa'/>}
                             &nbsp;
                             &nbsp;
                             {item.text}
