@@ -57,6 +57,7 @@ body {
   border: none;
   font-size: 1rem;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -426,10 +427,12 @@ hr {
   width: 100%;
   background-color: hsl(0, 0%, 0%, 50%);
 }
-.modal-content>h4{
+
+.modal-content>h4 {
   padding: 1rem 0;
   color: var(--clr-theme);
 }
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -550,6 +553,7 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
 /* ======CONTACT======== */
 
 .contact-container {
@@ -622,13 +626,19 @@ hr {
   display: flex;
   justify-content: space-around;
 }
-
+.word-line {overflow: hidden;}
+.skew-up {opacity: 0;}
 .contact-social-container>* {
   padding: 1rem;
-  background-color: hsl(0, 0%, 0%);
+  background-color:var(--clr-theme);
   border-radius: 50%;
   color: var(--clr-white);
   margin-bottom: .5rem;
+}
+
+.reveal-text {
+  font-weight: 800;
+  color: var(--clr-primary-400);
 }
 
 .contact-social-container>*:hover {
@@ -642,6 +652,7 @@ hr {
   .wrapper1>* {
     padding: .8rem;
   }
+
   .image-container:hover .my-name {
     letter-spacing: .5rem;
   }
@@ -649,9 +660,11 @@ hr {
   .contact-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact-social-container{
+
+  .contact-social-container {
     padding-bottom: 1.5rem;
   }
+
   .my-name {
     font-size: calc(2vh + 4.5vh);
   }
@@ -669,6 +682,7 @@ hr {
   }
 
 }
+
 @media (max-width: 625px) {
   .image-container:hover .my-name {
     letter-spacing: .5rem;
@@ -798,6 +812,7 @@ hr {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 html {
   scrollbar-color: var(--clr-theme) transparent;
   scrollbar-width: thin;

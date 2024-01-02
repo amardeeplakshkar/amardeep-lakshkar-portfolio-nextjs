@@ -4,8 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Title Tag */}
-        <title>Amardeep Lakshkar | Portfolio</title>
 
         {/* Meta Description Tag */}
         <meta name="description" content="Full Stack MERN Web Developer.
